@@ -25,9 +25,6 @@ def add_pres(president):
 df = pd.read_excel("data/T_3301.xlsx", sheet_name="Data")
 GDP = pd.read_excel("data/FRA_GDP.xlsx")
 
-# Remove all starting whitespace
-df.rename(columns=lambda x: x.strip(), inplace=True)
-
 ###FOCUS ON WHOLE EXPENSES
 
 # Dataframe with all "global" budget
